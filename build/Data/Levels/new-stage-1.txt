@@ -1,8 +1,10 @@
-# Street
-music		data/music/remix.bor
-bossmusic	data/music/menu.bor
+## Load music in this area ##
+music           data/music/stage1.ogg 441680
+bossmusic	data/music/boss.ogg
 
-# Load images
+## Load images in this area ##
+
+# Background layer
 background	data/bgs/street/back.gif
 
 # Front layer
@@ -37,11 +39,10 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-
-
 order abcdgghdfdfefdggcd
 order	fdefecdhfecggdab
 
+## Spawning Area ##
 # Spawn format:
 #
 #	spawn	[id]
@@ -80,6 +81,106 @@ order	fdefecdhfecggdab
 # group 4 4
 
 
-#--
 
-group1-----
+#--group1-----
+
+spawn jhun
+health 50
+coords 360 166
+at 486
+
+spawn angel
+health 50
+coords 360 210
+at 486
+
+spawn jhun
+health 50
+coords 360 166
+at 969
+
+spawn angel
+health 50
+coords -40 210
+at 969
+
+wait
+at 1880
+
+group 1 4
+at 1880
+
+spawn jhun
+health 50
+coords -40 166
+at 1880
+
+spawn eiji
+health 50
+coords -40 210
+at 1880
+
+spawn angel
+health 50
+coords 360 210
+at 1880
+
+spawn billy
+health 50
+coords 360 210
+at 1880
+
+spawn jhun
+health 50
+coords -40 166
+at 2403
+
+spawn eiji
+health 50
+coords -40 210
+at 2403
+
+spawn angel
+health 50
+coords 360 210
+at 2403
+
+spawn billy
+health 50
+coords 360 210
+at 2403
+
+spawn   billy
+health 50
+coords -40 166
+at 3003
+
+spawn eiji
+health 50
+coords -40 166
+at 3003
+
+spawn eiji
+health 50
+coords 360 166
+at 3003
+
+spawn billy
+health 50
+coords 360 210
+at 3003
+
+spawn box
+iteam meat
+coords 360 174
+at 3396
+
+spawn rugal
+health 100
+boss 1
+coords 244 194
+at 3760
+
+wait
+at 3760
+
